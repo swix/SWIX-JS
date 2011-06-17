@@ -2,8 +2,12 @@
 
 A read-only interface to the SWIX REST Api.
 
+SWIX-JS uses [jsonp](http://en.wikipedia.org/wiki/JSONP) to fetch data with
+the SWIX api.
 
 #Using the SWIX-JS Library
+
+##getting the library
 
 You can load the SWIX Javascript library one of 2 ways.
 
@@ -16,13 +20,15 @@ Javascript directly from SWIX.
 ```html
 	<script type="text/javascript" src="www.swixapp.com/media/js/swix.1.0.js">
 ```
+##Authentication 
 
+Authentication for the Javascript library uses API Key authentication.
+You will be assigned an API Key to use in conjunction with your username
+when you signup for API access.
 
-SWIX-JS uses [jsonp](http://en.wikipedia.org/wiki/JSONP) to fetch data with
-the SWIX api.
+##Usage
 
-
-Initialize the Library
+Initialize the Library/Authenticate
 
 ```javascript
 	SWIX.init('username', 'apikey')
@@ -161,3 +167,10 @@ you will be able to request other
 ```
 
 
+#Questions ?
+
+Contact Mike Grouchy
+@mgrouchy 
+mike@swixhq.com
+
+or [SWIX Support](http://support.swixhq.com)
