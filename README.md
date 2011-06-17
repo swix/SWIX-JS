@@ -7,7 +7,7 @@ the SWIX api.
 
 #Using the SWIX-JS Library
 
-##getting the library
+##Getting the library
 
 You can load the SWIX Javascript library one of 2 ways.
 
@@ -174,4 +174,4 @@ Contact Mike Grouchy
     twitter: @mgrouchy
     email: mike@swixhq.com
 
-Or Contact [SWIX Support](http://support.swixhq.com)
+or Contact [SWIX Support](http://support.swixhq.com)
