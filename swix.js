@@ -67,6 +67,7 @@
 	// local swix variable also public in window
 	SWIX = window.SWIX = {};
 
+
 	//initialization function, initialized username and api key
 	// also initialized debug mode. (which currently doesn't really do anything)
 	SWIX.init = function(user, key, debug)
