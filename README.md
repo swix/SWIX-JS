@@ -24,13 +24,13 @@ the SWIX api.
 
 Initialize the Library
 
-```
+```javascript
 	SWIX.init('username', 'apikey')
 ```
 
 Fetch a list of brands
 
-```
+``` javascript
 	SWIX.getBrands(function(data){
 		console.log(data);
 	});
