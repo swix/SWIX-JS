@@ -170,7 +170,8 @@ you will be able to request other
 #Questions ?
 
 Contact Mike Grouchy
-@mgrouchy 
-mike@swixhq.com
 
-or [SWIX Support](http://support.swixhq.com)
+    twitter: @mgrouchy
+    email: mike@swixhq.com
+
+Or Contact [SWIX Support](http://support.swixhq.com)
