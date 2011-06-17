@@ -59,7 +59,7 @@ Fetch a list of brands
 
 Fetch a Brand by its ID
 
-```
+```javascript
 	SWIX.getBrandByID(1, function(data){
 		console.log(data);
 	});
@@ -76,7 +76,7 @@ Fetch a Brand by its ID
 
 Fetch a List of pods in a particular Brand
 
-```
+```javascript
 	SWIX.getBrandPods(1, function(data){
 		console.log(data);
 	});
@@ -107,7 +107,7 @@ Fetch a List of pods in a particular Brand
 
 Fetch a Pod given a Brand ID and a Pod ID.
 
-```
+```javascript
 	SWIX.getPodById(1, 2, function(data){
 		console.log(data);
 	});
@@ -129,7 +129,7 @@ Optionally specify an arbitrary metric to retrieve
 Note: Currently only highcharts format is supported, eventually
 you will be able to request other
 
-```
+```javascript
 	SWIX.getPodSeriesData(1, 2, , function(data){
 		console.log(data);
 	});
