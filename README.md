@@ -23,11 +23,13 @@ the SWIX api.
 
 
 Initialize the Library
-```
+
+```html
 	SWIX.init('username', 'apikey')
 ```
 
 Fetch a list of brands
+
 ```
 	SWIX.getBrands(function(data){
 		console.log(data);
