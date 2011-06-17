@@ -23,12 +23,12 @@ the SWIX api.
 
 
 Initialize the Library
-```javascript
+```js
 	SWIX.init('username', 'apikey')
 ```
 
 Fetch a list of brands
-```javascript
+```js
 	SWIX.getBrands(function(data){
 		console.log(data);
 	});
@@ -56,7 +56,7 @@ Fetch a list of brands
 ```
 
 Fetch a Brand by its ID
-```javascript
+```js
 	SWIX.getBrandByID(1, function(data){
 		console.log(data);
 	});
@@ -72,7 +72,7 @@ Fetch a Brand by its ID
 ```
 
 Fetch a List of pods in a particular Brand
-```javascript
+```js
 	SWIX.getBrandPods(1, function(data){
 		console.log(data);
 	});
@@ -102,7 +102,7 @@ Fetch a List of pods in a particular Brand
 ```
 
 Fetch a Pod given a Brand ID and a Pod ID.
-```javascript
+```js
 	SWIX.getPodById(1, 2, function(data){
 		console.log(data);
 	});
@@ -117,14 +117,13 @@ Fetch a Pod given a Brand ID and a Pod ID.
 		"name": "Mike Grouchy",
 		"seriesdata": "/api/v1/brand/38/pod/1/seriesdata/"
 	}
-
 ```
 
 Get the a Pods Series Data given a Brand ID and a Pod ID.
 Optionally specify an arbitrary metric to retrieve
 Note: Currently only highcharts format is supported, eventually
 you will be able to request other
-```javascript
+```js
 	SWIX.getPodSeriesData(1, 2, , function(data){
 		console.log(data);
 	});
