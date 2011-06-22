@@ -141,7 +141,7 @@ you will be able to request other
 	});
 
 	//assuming a twitter pod and we want to get the follower data
-	SWIX.getPodSeriesData(1, 2, 'followers', function(data){
+	SWIX.getPodSeriesData(1, 2, 'followers', 'highcharts', function(data){
 		console.log(data);
 	});
 
