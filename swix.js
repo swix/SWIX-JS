@@ -111,10 +111,23 @@
 	};
 
 	//Get a pods series data
-	SWIX.getPodSeriesData = function(brandID, podID, metric, callback, params)
+	SWIX.getPodSeriesData = function(brandID, podID, metric, graph, callback, params)
 	{
 		metric = defaultParam(metric, '');
-		endpointURL = 'brand/' + brandID + '/pod/' + podID + '/seriesdata/' + metric;
+		graph = defaultParam(graph, 'highcharts');
+		param = ""
+		
+		if(metric != '')
+		{
+		    param = "?fields=" + metric + "&graph=" + graph;
+		}
+		else
+		{
+		    param = "?graph=" + graph;
+		}
+		
+		
+		endpointURL = 'brand/' + brandID + '/pod/' + podID + '/seriesdata/' + param;
 		jsonp(endpointURL, callback, params)
 		return this;
 	};
