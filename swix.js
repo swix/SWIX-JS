@@ -114,16 +114,24 @@
 	SWIX.getPodSeriesData = function(brandID, podID, metric, graph, callback, params)
 	{
 		metric = defaultParam(metric, '');
-		graph = defaultParam(graph, 'highcharts');
+		graph = defaultParam(graph, '');
 		param = ""
 		
 		if(metric != '')
 		{
-		    param = "?fields=" + metric + "&graph=" + graph;
+		    param = "?fields=" + metric;
 		}
-		else
+		
+		if(graph != '')
 		{
-		    param = "?graph=" + graph;
+		    if( param != '')
+		    {
+		        param = param + "&graph=" + graph;
+		    }
+		    else
+		    {
+		        param = "?graph=" + graph;
+		    }
 		}
 		
 		
