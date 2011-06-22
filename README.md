@@ -131,7 +131,8 @@ Fetch a Pod given a Brand ID and a Pod ID.
 ```
 
 Get the a Pods Series Data given a Brand ID and a Pod ID.
-Optionally specify an arbitrary metric to retrieve
+Optionally specify an arbitrary metric to retrieve.
+You may also specify what graph fromat to retrieve the data in.
 Note: Currently only highcharts format is supported, eventually
 you will be able to request other
 
@@ -162,6 +163,44 @@ you will be able to request other
 			[1302584400000, 12], [1302670800000, 14], [1302757200000, 12],
 			[1302843600000, 13], [1302930000000, 13], [1303016400000, 13],
 			[1303102800000, 13], [1303189200000, 16], [1303275600000, 14]]
+	}
+	
+	SWIX.getPodSeriesData(55,3,'','',function(data){
+		console.log(data);
+	});
+	
+	//result
+	{
+	   "meta":{
+	      "limit":20,
+	      "next":null,
+	      "offset":0,
+	      "previous":null,
+	      "total_count":18
+	   },
+	   "objects":[
+	      {
+	         "friends":55,
+	         "id":"1",
+	         "measured_at":"2011-06-11T16:00:20",
+	         "updated_at":"2011-06-10T16:00:20",
+	         "wallposts":100
+	      },
+	      {
+	         "friends":65,
+	         "id":"2",
+	         "measured_at":"2011-06-12T16:00:20",
+	         "updated_at":"2011-06-10T16:00:20",
+	         "wallposts":110
+	      },
+	      {
+	         "friends":75,
+	         "id":"3",
+	         "measured_at":"2011-06-13T16:00:20",
+	         "updated_at":"2011-06-10T16:00:20",
+	         "wallposts":120
+	      }
+	   ]
 	}
 
 ```
