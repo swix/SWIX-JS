@@ -1,5 +1,4 @@
 
-
 (function (window) {
 
 	//private variables
@@ -36,7 +35,7 @@
 			prefix = '&';
 
 
-		var id = 1;
+		var id = Math.floor(Math.random()*11);
 		//generate a unique id for the callback(jsonp padding)
 		//then add the callback to the list of callbacks
 		while (SWIX.jsonp_callbacks[id] !== undefined)
