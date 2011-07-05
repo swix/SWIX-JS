@@ -18,7 +18,7 @@
 	//utility function for setting a default param
 	defaultParam = function(param, defaultVal)
 	{
-		if (param == undefined)
+		if (param === undefined)
 			return defaultVal;
 
 		return param;
@@ -112,23 +112,23 @@
 	//Get a pods series data
 	SWIX.getPodSeriesData = function(brandID, podID, metric, graph, callback, params)
 	{
-		var metric = defaultParam(metric, '');
-		var graph = defaultParam(graph, '');
-		var queryString = ""
+		metric = defaultParam(metric, '');
+		graph = defaultParam(graph, '');
+		var queryString = "";
 
-		if(metric != '')
+		if(metric !== '')
 		    queryString = "?fields=" + metric;
 
-		if(graph != '')
+		if(graph !== '')
 		{
-		    if( queryString != '')
+		    if( queryString !== '')
 		        queryString += "&graph=" + graph;
 		    else
 		        queryString = "?graph=" + graph;
 		}
 
 		endpointURL = 'brand/' + brandID + '/pod/' + podID + '/seriesdata/' + queryString;
-		jsonp(endpointURL, callback, params)
+		jsonp(endpointURL, callback, params);
 		return this;
 	};
 
